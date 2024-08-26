@@ -1,0 +1,625 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 12% 70% 18%;
+  background-color: rgb(40, 46, 55);
+  font-family: "Poppins", sans-serif;
+}
+
+.navigation-bar-container {
+  width: 100%;
+  height: 100vh;
+  box-shadow: 0 0 0 0.5px rgba(255, 255, 255, 0.5);
+}
+
+.user-nav-main-container {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 0 0.5px rgba(255, 255, 255, 0.5);
+}
+
+.user-profile-secondary-container {
+  height: 4.5vh;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.user-profile-icon {
+  height: 4.5vh;
+  width: 4.5vh;
+  border-radius: 50%;
+  background-color: rgb(156, 230, 194);
+  box-shadow: 0 0 0 2px rgb(255, 255, 255);
+}
+
+.user-profile-secondary-container h2 {
+  color: white;
+  font-size: 1.6vh;
+  font-weight: 300;
+}
+
+.dashboard-nav--main-container,
+.tickets-nav--main-container,
+.settings-nav--main-container {
+  width: 100%;
+  height: 9vh;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 0 0.5px rgba(255, 255, 255, 0.5);
+}
+
+.selected {
+  background-color: rgb(27, 32, 38);
+  border-left: 5px solid rgb(0, 199, 211);
+}
+
+.dashboard-nav-secondary-container,
+.tickets-nav-secondary-container,
+.settings-nav-secondary-container {
+  height: 4.5vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 4vh;
+}
+
+.home-icon,
+.book-icon,
+.settings-icon {
+  height: 2vh;
+  width: 2vh;
+}
+
+.dashboard-nav-header,
+.tickets-nav-header,
+.settings-nav-header {
+  font-size: 1.4vh;
+  color: white;
+  font-weight: 200;
+  margin-left: 2vh;
+  text-decoration: none;
+}
+
+/* =================================================================*/
+
+.welcome-dashboard-main-container {
+  height: 30vh;
+  width: 100%;
+  background-color: rgb(27, 32, 38);
+  margin-bottom: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-text-container h2 {
+  color: rgba(255, 255, 255, 0.562);
+  font-size: 2vh;
+  font-weight: 100;
+  letter-spacing: 1vh;
+}
+
+.welcome-text-container h1 {
+  color: white;
+  font-size: 5vh;
+  font-weight: 300;
+}
+
+.dashboard-main-container {
+  margin: 5vh;
+}
+
+.dashboard-main-container h2 {
+  font-size: 2vh;
+  font-weight: 100;
+  color: white;
+}
+
+.stats-main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.not-invoiced-main-container,
+.invoiced-main-container,
+.paid-main-container {
+  height: 52vh;
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.not-invoiced-main-container {
+  background-color: rgb(156, 163, 230);
+}
+
+.invoiced-main-container {
+  background-color: rgb(69, 229, 172);
+}
+
+.paid-main-container {
+  background-color: rgb(97, 213, 235);
+}
+
+.outer-circle {
+  height: 33vh;
+  width: 33vh;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3vh;
+}
+
+.inner-circle {
+  height: 23vh;
+  width: 23vh;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.not-invoiced-outer {
+  background-color: rgb(119, 125, 178);
+}
+
+.not-invoiced-inner {
+  background-color: rgb(156, 163, 230);
+}
+
+.invoiced-outer {
+  background-color: rgb(32, 177, 125);
+}
+
+.invoiced-inner {
+  background-color: rgb(69, 229, 172);
+}
+
+.paid-outer {
+  background-color: rgb(69, 164, 182);
+}
+
+.paid-inner {
+  background-color: rgb(97, 213, 235);
+}
+
+.not-invoiced-mini-stats-container h2 {
+  font-size: 5vh;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.invoiced-mini-stats-container h2 {
+  font-size: 5vh;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.paid-mini-stats-container h2 {
+  font-size: 5vh;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.not-invoiced-mini-stats-container h3 {
+  font-size: 1.5vh;
+  font-weight: 100;
+  color: white;
+  text-align: center;
+}
+
+.invoiced-mini-stats-container h3 {
+  font-size: 1.5vh;
+  font-weight: 100;
+  color: white;
+  text-align: center;
+}
+
+.paid-mini-stats-container h3 {
+  font-size: 1.5vh;
+  font-weight: 100;
+  color: white;
+  text-align: center;
+}
+
+.skills-header-text {
+  margin-top: 4vh;
+  text-align: center;
+}
+
+/*----------------------------------------------------------------*/
+
+.notifications-main-container {
+  width: 100%;
+  height: 100vh;
+  box-shadow: 0 0 0 0.5px rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notifications-sub-container {
+  width: 80%;
+  height: 100vh;
+}
+
+.search-user-container {
+  height: 15vh;
+  width: 100%;
+  display: flex;
+
+  align-items: center;
+}
+.search-bar {
+  height: 3vh;
+  width: 100%;
+  box-shadow: 0 0 0 0.5px rgba(255, 255, 255, 0.5);
+  border-radius: 20vh;
+  background-color: rgba(78, 90, 108);
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.notifications-main-container h2 {
+  font-size: 1.5vh;
+  font-weight: 300;
+  color: white;
+}
+
+.notifications-user-main-conatiner {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 4vh;
+  align-items: center;
+}
+
+.notifications-user-icon {
+  background-color: aqua;
+  height: 4vh;
+  width: 4vh;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.notifications-user-name-container h3 {
+  font-weight: 100;
+  color: white;
+  font-size: 1.5vh;
+}
+
+.alert-icon {
+  height: 0.6vh;
+  width: 0.6vh;
+  border-radius: 50%;
+  border: 0.5vh solid rgba(216, 0, 0);
+}
+
+/* ============================================================================================================================================================================================================================================================================*/
+/*Ticket Page*/
+
+.body2 {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 12% 88%;
+  background-color: rgb(40, 46, 55);
+  font-family: "Poppins", sans-serif;
+}
+
+.welcome-dashboard-main-container h2 {
+  color: rgba(255, 255, 255, 0.562);
+  font-size: 2vh;
+  font-weight: 100;
+  letter-spacing: 1vh;
+}
+
+.v2 {
+  height: 20vh;
+}
+
+.welcome-dashboard-main-container h1 {
+  color: white;
+  font-size: 5vh;
+  font-weight: 300;
+}
+
+.add-users-header-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.add-users-btn {
+  height: 4vh;
+  width: 14vh;
+  border-radius: 1.2vh;
+  background-color: rgb(156, 163, 230);
+  text-align: center;
+  color: white;
+  font-size: 1.6vh;
+  border: 1px solid rgb(207, 207, 207);
+  cursor: pointer;
+}
+
+.tickets-main-container {
+  margin-top: 2vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 6vh;
+}
+
+.ticket-same-css {
+  height: 60vh;
+  width: 100%;
+}
+
+.not-invoiced-tickets-main-container {
+  background-color: rgb(106, 111, 164);
+}
+
+.invoiced-tickets-main-container {
+  background-color: rgb(44, 161, 120);
+}
+
+.paid-tickets-main-container {
+  background-color: rgb(61, 137, 151);
+}
+
+.not-invoiced-tickets-secondary-container {
+  margin: 3vh;
+}
+
+.not-invoiced-tickets-secondary-container h2 {
+  font-weight: 300;
+}
+
+.not-invoiced-ticket-body-main-conatiner {
+  display: flex;
+  flex-direction: column;
+
+  overflow-y: scroll;
+  height: 50vh;
+}
+
+.not-invoiced-ticket-body-main-conatiner::-webkit-scrollbar {
+  display: none;
+}
+
+.not-invoiced-ticket-body-secondary-conatiner {
+  background-color: rgb(156, 163, 230);
+  height: 8vh;
+  width: 100%;
+  margin-top: 1vh;
+  border-radius: 1vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.not-invoiced-ticket-body-secondary-conatiner:hover {
+  background-color: rgb(196, 202, 255);
+  transition: 1s;
+}
+
+.ticket-icon {
+  height: 4vh;
+  width: 4vh;
+  background-color: aqua;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin-left: 3vh;
+}
+.btn-ticket-conatiner {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-ticket-invoice {
+  border-top-right-radius: 1vh;
+  height: 4vh;
+  width: 8vh;
+  border: 0.1vh solid white;
+  background-color: rgb(69, 229, 172);
+  color: white;
+  font-size: 1.4vh;
+  cursor: pointer;
+}
+
+.btn-ticket-not-invoice {
+  border-top-right-radius: 1vh;
+  height: 4vh;
+  width: 8vh;
+  border: 0.1vh solid white;
+  background-color: rgb(156, 163, 230);
+  color: white;
+  font-size: 1.4vh;
+  cursor: pointer;
+}
+
+.btn-ticket-paid {
+  border-bottom-right-radius: 1vh;
+  height: 4vh;
+  width: 8vh;
+  border: 0.1vh solid white;
+  background-color: rgb(97, 213, 235);
+  color: white;
+  font-size: 1.4vh;
+  cursor: pointer;
+}
+
+.not-invoiced-ticket-body-secondary-conatiner h2 {
+  font-size: 1.6vh;
+  font-weight: 300;
+}
+
+.not-invoiced-ticket-body-secondary-conatiner a {
+  text-decoration: none;
+  color: white;
+}
+
+.invoiced-ticket-body-secondary-conatiner {
+  background-color: rgb(69, 229, 172);
+  height: 8vh;
+  width: 100%;
+  margin-top: 1vh;
+  border-radius: 1vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.invoiced-ticket-body-secondary-conatiner:hover {
+  background-color: rgb(121, 255, 208);
+  transition: 1s;
+}
+
+.invoiced-ticket-body-secondary-conatiner h2 {
+  font-size: 1.6vh;
+  font-weight: 300;
+}
+
+.invoiced-ticket-body-secondary-conatiner a {
+  text-decoration: none;
+  color: white;
+}
+
+.paid-ticket-body-secondary-conatiner {
+  background-color: rgb(97, 213, 235);
+  height: 8vh;
+  width: 100%;
+  margin-top: 1vh;
+  border-radius: 1vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.paid-ticket-body-secondary-conatiner:hover {
+  background-color: rgb(151, 238, 255);
+  transition: 1s;
+}
+
+.paid-ticket-body-secondary-conatiner h2 {
+  font-size: 1.6vh;
+  font-weight: 300;
+}
+
+.paid-ticket-body-secondary-conatiner a {
+  text-decoration: none;
+  color: white;
+}
+
+/*----------------------------------------------------------------*/
+.ticket-info-main-container {
+  margin-top: 2vh;
+  height: 62vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(27, 32, 38);
+}
+
+.ticket-info-main-container-adjusted {
+  margin-left: 5vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  height: 100%;
+  display: flex;
+}
+
+.form-input-main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ticket-info-secondary-container {
+  width: 80%;
+}
+
+.form-input-collumn {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+
+.form-input-collumn label {
+  color: white;
+  font-weight: 200;
+}
+
+.form-input-collumn input {
+  height: 2.5vh;
+  width: 25vh;
+  border-radius: 0.5vh;
+  background-color: rgb(55, 61, 71);
+}
+
+.description {
+  height: 35vh;
+  width: 100%;
+  margin-top: 2.5vh;
+  border: 1px solid rgb(255, 255, 255, 0.5);
+  background-color: rgb(55, 61, 71);
+  color: white;
+  font-size: 2vh;
+  border-radius: 1vh;
+}
+
+.btn-back {
+  height: 4vh;
+  width: 20vh;
+  border-radius: 1vh;
+  background-color: rgb(156, 163, 230);
+  color: white;
+  font-size: 1.7vh;
+  cursor: pointer;
+}
+
+.ticket-info-button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 20%;
+}
+
+.center {
+  text-align: center;
+}
+
+.btn-add {
+  width: 20vh;
+  height: 6vh;
+  background-color: rgb(156, 163, 230);
+  color: white;
+  border-radius: 1vh;
+  font-size: 2.5vh;
+}
+
+.white-text {
+  color: white;
+}

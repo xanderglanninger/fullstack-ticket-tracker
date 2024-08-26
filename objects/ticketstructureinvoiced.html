@@ -1,0 +1,16 @@
+<div class="invoiced-ticket-body-secondary-conatiner">
+  <div class="ticket-icon"></div>
+  <a href="person.html" onclick="displayPersonInfo('{%PERSONID%}')">{%PERSONNAME%}</a>
+  <div class="btn-ticket-conatiner">
+    <button
+      type="button"
+      class="btn-ticket-not-invoice"
+      onclick="MoveFileToInvoice('{%PERSONID%}', '/MoveFileToNotInvoice')"
+    >
+      Not Invoice
+    </button>
+    <button type="button" class="btn-ticket-paid" onclick="MoveFileToInvoice('{%PERSONID%}', '/MoveFileToPaid')">
+      Paid
+    </button>
+  </div>
+</div>

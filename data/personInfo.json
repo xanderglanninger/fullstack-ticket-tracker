@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "name": "Xander",
+    "surname": "Glanninger",
+    "dbalance": 20,
+    "taxAccounting": "tax",
+    "invoiced": false,
+    "invoiceAmount": 20000,
+    "paid": false,
+    "description": "Hi there, I'm Xander and I want to be a fullstack web developer"
+  },
+  {
+    "id": 2,
+    "name": "Jan",
+    "surname": "Albert",
+    "dbalance": 20,
+    "taxAccounting": "tax",
+    "invoiced": true,
+    "invoiceAmount": 20000,
+    "paid": false,
+    "description": "Hi there, I'm Jan and I work for Entelect"
+  },
+  {
+    "id": 3,
+    "name": "Vernon",
+    "surname": "Engelbrecht",
+    "dbalance": 20,
+    "taxAccounting": "tax",
+    "invoiced": true,
+    "invoiceAmount": 20000,
+    "paid": false,
+    "description": "Hi there, I'm Vernon and I go to the gym alot"
+  },
+  {
+    "id": 4,
+    "name": "Tiaan",
+    "surname": "Botes",
+    "dbalance": 30,
+    "taxAccounting": "tax",
+    "invoiced": true,
+    "invoiceAmount": 1000000,
+    "paid": true,
+    "description": "Hi there, I'm Tiaan and my IQ is at least 160"
+  },
+  {
+    "id": 5,
+    "name": "Sean",
+    "surname": "Botha",
+    "dbalance": null,
+    "taxAccounting": "Tax",
+    "invoiced": false,
+    "invoiceAmount": null,
+    "paid": false,
+    "description": "Hi im Sean"
+  },
+  {
+    "id": 6,
+    "name": "Kaylee",
+    "surname": "Carstens",
+    "dbalance": null,
+    "taxAccounting": "Tax",
+    "invoiced": true,
+    "invoiceAmount": null,
+    "paid": true,
+    "description": "Hi im Kaylee"
+  },
+  {
+    "id": 7,
+    "name": "Ulrich",
+    "surname": "Muller",
+    "dbalance": null,
+    "taxAccounting": "tax",
+    "invoiced": false,
+    "invoiceAmount": null,
+    "paid": false,
+    "description": "Hello"
+  },
+  {
+    "id": 8,
+    "name": "Piet",
+    "surname": "Pompies",
+    "dbalance": null,
+    "taxAccounting": "tax",
+    "invoiced": false,
+    "invoiceAmount": null,
+    "paid": false,
+    "description": ""
+  }
+]
