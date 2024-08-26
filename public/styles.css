@@ -475,6 +475,7 @@ body {
 .not-invoiced-ticket-body-secondary-conatiner a {
   text-decoration: none;
   color: white;
+  font-size: 1.7vh;
 }
 
 .invoiced-ticket-body-secondary-conatiner {
@@ -502,6 +503,7 @@ body {
 .invoiced-ticket-body-secondary-conatiner a {
   text-decoration: none;
   color: white;
+  font-size: 1.7vh;
 }
 
 .paid-ticket-body-secondary-conatiner {
@@ -529,6 +531,7 @@ body {
 .paid-ticket-body-secondary-conatiner a {
   text-decoration: none;
   color: white;
+  font-size: 1.7vh;
 }
 
 /*----------------------------------------------------------------*/
